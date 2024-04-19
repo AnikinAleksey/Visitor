@@ -197,7 +197,6 @@ struct FoldConstants : Transformer
 			Expression* result = new Number(binop->evaluate());
 			// Освобождаем память
 			delete nbinop;
-			//Возвращаем результат
 			return result;
 		}
 		else {
@@ -221,7 +220,6 @@ struct FoldConstants : Transformer
 			Expression* result = new Number(fcall->evaluate());
 			// Освобождаем память
 			delete nfcall;
-			//Возвращаем результат
 			return result;
 		}
 		else {
